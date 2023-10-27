@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container-slide{
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+    height: 50vh;
+    background-color: black;
+    margin: 20vh auto;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px black;
+    border: 5px solid black;
+}/*O código define um conjunto de estilos CSS para o elemento HTML com a 
+classe "container-slide".
+
+display: flex;: Define o elemento como um container flexível, permitindo 
+que seus filhos sejam organizados em uma linha ou coluna e ajustados 
+automaticamente.
+
+justify-content: space-between;: Alinha os itens/filhos horizontalmente 
+dentro do container, distribuindo o espaço disponível igualmente entre eles, 
+mas deixando espaços vazios nas extremidades.
+
+width: 50vw;: Define a largura do elemento como 50% da largura da janela de 
+visualização (viewport).
+
+height: 50vh;: Define a altura do elemento como 50% da altura da janela de 
+visualização (viewport).
+
+background-color: black;: Define a cor de fundo do elemento como preto.
+
+margin: 20vh auto;: Define margens superior e inferior de 20% da altura da 
+janela de visualização (viewport) e margens esquerda e direita automáticas.
+
+border-radius: 10px;: Define o raio de borda do elemento como 10 pixels, 
+arredondando os cantos.
+
+box-shadow: 0 20px 30px black;: Adiciona uma sombra ao elemento com deslocamento 
+horizontal de 0, deslocamento vertical de 20 pixels, desfoque de 30 pixels e cor preta.
+
+border: 5px solid black;: Adiciona uma borda de 5 pixels sólida ao redor do elemento, 
+com cor preta.
+
+Em resumo, esse código aplica diversos estilos visuais, como tamanho, cor, bordas, 
+sombra e alinhamento, a um elemento HTML com a classe "container-slide". 
+Esses estilos podem ser ajustados de acordo com as necessidades e preferências 
+do desenvolvedor.*/
+
+.container-items {
+    position: absolute;
+    display: flex;
+    width: 50vw;
+    height: 50vh;
+    border-radius: 10px;
+    overflow: hidden;
+}/* Define o posicionamento do elemento como absoluto em relação ao seu 
+elemento pai.
+
+display: flex;: Habilita o modelo de layout flexbox no elemento, permitindo 
+o uso de propriedades flexíveis para organizar e controlar o posicionamento 
+dos elementos filhos.
+
+width: 50vw;: Define a largura do elemento como 50% da largura da janela de 
+visualização (viewport).
+
+height: 50vh;: Define a altura do elemento como 50% da altura da janela de 
+visualização (viewport).
+
+border-radius: 10px;: Define o raio de borda do elemento como 10 pixels, 
+arredondando os cantos.
+
+overflow: hidden;: Esconde qualquer conteúdo que ultrapasse os limites 
+do elemento, ocultando-o.*/
+
+.item {
+    width: 50vw;
+    height: 50vh;
+    transition: all 1s;
+}
+.item:first-child{
+    margin-left: -100%;
+}/*O código define um estilo CSS para o primeiro elemento filho 
+(primeiro filho direto) que possui a classe "item" dentro de seu elemento pai.
+
+margin-left: -100%;: Define uma margem esquerda negativa de 100% 
+para esse primeiro elemento filho. Isso significa que o elemento 
+será movido para fora da área visível à esquerda do seu contêiner pai, 
+proporcionando um efeito de deslocamento para a esquerda.
+
+Esse código pode ser usado para criar um carrossel ou slider, onde o 
+primeiro item é inicialmente oculto e fica fora da área visível, 
+permitindo que os itens subsequentes apareçam em sua posição original.*/
+
+.item img {
+    width: 50vw;
+    height: 50vh;
+    border-radius: 10px;
+}/*O código define um conjunto de estilos CSS para as imagens que estão 
+dentro de elementos com a classe "item".
+
+width: 50vw;: Define a largura da imagem como 50% da largura da janela 
+de visualização (viewport).
+
+height: 50vh;: Define a altura da imagem como 50% da altura da janela 
+de visualização (viewport).
+
+border-radius: 10px;: Define o raio de borda da imagem como 10 pixels, 
+arredondando os cantos.
+
+Dessa forma, esse código aplica esses estilos especificamente às imagens 
+que estão dentro de elementos com a classe "item", definindo sua 
+largura, altura e formato de borda.*/
+
+.action-button{
+    font: bold 30px sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    color: #00000000;
+    user-select: none;
+    z-index: 1;
+}
+/*O código define um conjunto de estilos CSS para o elemento HTML com a classe "action-button".
+
+font: bold 30px sans-serif;: Define a propriedade fonte do texto dentro do botão como negrito (bold), 
+com tamanho de 30 pixels e usando a fonte sans-serif.
+
+display: flex;: Define o elemento como um container flexível, permitindo que seus filhos sejam 
+organizados em uma linha ou coluna e ajustados automaticamente.
+
+justify-content: center;: Alinha os itens/filhos horizontalmente dentro do container, centralizando-os horizontalmente.
+
+align-items: center;: Alinha os itens/filhos verticalmente dentro do container, centralizando-os verticalmente.
+
+width: 50px;: Define a largura do elemento como 50 pixels.
+
+color: #00000000;: Define a cor do texto dentro do botão como totalmente transparente, tornando-o invisível.
+
+user-select: none;: Desativa a seleção de texto dentro do elemento pelo usuário, impedindo que o texto 
+seja selecionado quando arrastado ou clicado.
+
+z-index: 1;: Define a posição do elemento em relação a outros elementos na pilha de camadas (z-index). 
+Um valor maior indica que o elemento aparecerá acima de outros elementos com valores menores.
+
+Em resumo, esse código aplica estilos visuais ao elemento HTML com a classe "action-button", 
+incluindo a aparência do texto, o alinhamento do conteúdo, a largura, a cor do texto, a 
+desativação da seleção de texto e a camada de sobreposição (z-index). 
+Esses estilos podem ser ajustados de acordo com as necessidades e preferências do desenvolvedor.*/
+.action-button:hover{
+    color: white;
+    background-color: #00000055;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 1s;
+}
+/*O código define um conjunto de estilos CSS aplicados quando o cursor do mouse está sobre um elemento 
+com a classe "action-button".
+color: white;: Define a cor do texto dentro do botão como branco quando o cursor do mouse está sobre ele.
+background-color: #00000055;: Define a cor de fundo do botão como preto com uma transparência de 33% 
+(hexadecimal #00000055) quando o cursor do mouse está sobre ele.
+border-radius: 10px;: Define o raio de borda do botão como 10 pixels, arredondando os cantos quando o 
+cursor do mouse está sobre ele.
+cursor: pointer;: Altera o cursor do mouse para um ponteiro quando está sobre o botão, indicando que é clicável.
+transition: all 1s;: Aplica uma transição suave de 1 segundo para todas as propriedades alteradas quando o cursor 
+do mouse entra ou sai do botão. Isso cria um efeito de animação gradual nas mudanças de estilo.
+Em resumo, esse código especifica os estilos que serão aplicados ao elemento com a classe "action-button" quando 
+o cursor do mouse está sobre ele. Os estilos incluem alterações na cor do texto, cor de fundo, borda, cursor do 
+mouse e uma transição suave. Esses estilos fornecem uma interatividade visual ao botão quando o usuário passa o mouse sobre ele.*/
